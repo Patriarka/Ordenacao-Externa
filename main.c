@@ -3,7 +3,8 @@
 
 #include "big_file.h"
 #include "ManutencaoArquivo.h"
-#define N 512000 // Quantidade de registros a serem inseridos
+
+#define N 1572864 // Quantidade de registros a serem inseridos
 
 int main(int argc, char** argv){
 
@@ -13,7 +14,7 @@ int main(int argc, char** argv){
 
   gerar_array_iv("entrada.dat", N, 42); // gera o array de registros, que é introduzido no arquivo de entrada
 
-  long b = 8388608; // número maximo de bytes para armazenar registros durante toda a operação
+  long b = 134217728; // número maximo de bytes para armazenar registros durante toda a operação
 
   long s = b/4; // número de bytes do buffer de saida
 

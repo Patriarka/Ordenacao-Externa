@@ -139,7 +139,6 @@ void Ordenacao_Externa(const char *arquivo_entrada, long b, long s, const char *
     {
         sprintf(nome_arquivo, "%d", i);
         vetor_buffer_entrada[i] = Criar_BufferEntrada(quantidade_registros_por_particao, nome_arquivo);
-        printf("%d\n", vetor_buffer_entrada[i]->quantidade_registros_total);
     };
         
     // consumir todos os arquivos temporários através dos buffer de entrada

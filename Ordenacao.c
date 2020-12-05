@@ -62,7 +62,6 @@ void Intercalacao(BUFFER **vetor_buffer_entrada, int qtde_buffers_entrada, int q
         if(buffer_saida->quantidade_consumidos == buffer_saida->quantidade_registros || buffer_saida->quantidade_consumidos_total == buffer_saida->quantidade_registros_total)
             Despejar_BufferSaida(buffer_saida, arquivo_saida_aberto);
 
-        printf("%d %d\n", i, consumido->id);
         if(i != consumido->id){
             printf("%d", consumido->id);
             return;
